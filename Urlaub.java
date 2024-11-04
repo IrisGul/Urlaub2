@@ -62,7 +62,7 @@ public class Urlaub
         return allInc;
     }
     /* 
-     * if abfrage statt allInc schreibe " all inc oder keine Verpflegung"
+     * if abfrage statt allInc false or true schreibe -->" all inc OR keine Verpflegung"
      */
     public void printUrlaub()
     {
