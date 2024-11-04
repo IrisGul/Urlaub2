@@ -32,9 +32,18 @@ public class Urlaub
     {
         this.ort=ort;
     }
+    //Die Preis soll von 500 Euro bis 3000 Euro sein
     public void setPreis(int preis)
     {
-        this.preis=preis;
+       if((preis>=500) && (preis<=3000))
+       {
+           this.preis=preis;
+       }
+       else
+       {
+         System.out.println("Fehler meldung! Preis soll zwieschen 500€ und 3000€ muss sein.");
+         this.preis=2000;
+       }
     }
     public void setAllInc( boolean allInc)
     {
