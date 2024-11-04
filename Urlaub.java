@@ -52,8 +52,19 @@ public class Urlaub
     {
         return allInc;
     }
+    /* 
+     * if abfrage statt allInc schreibe " all inc oder keine Verpflegung"
+     */
     public void printUrlaub()
     {
-        System.out.println("Ort Name: " + ort + " Preis: " + preis + "Euro Allinclusive: "  + allInc);
+        if( allInc==true)
+        {
+           System.out.println("Orname: " + ort + " Preis: " + preis + " Euro all Inclusive " );
+        }
+        else
+        {
+            System.out.println("Ortname: " + ort + " Preis: " + preis + " Euro keine Verpflegung ");
+
+        }
     }
 }
